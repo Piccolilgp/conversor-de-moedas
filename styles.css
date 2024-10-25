@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: rgb(43, 43, 43);
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    text-align: center;
+    color: rgb(151, 153, 155);
+}
+
+main {
+    text-align: center;
+    margin-top: 100px;
+    color: rgb(151, 153, 155);
+}
+
+.introducao {
+    font-style: oblique;
+    font-weight: bolder;
+    margin: 50px 0; 
+}
+
+p {
+    margin: 10px;
+}
+
+.conversor {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    width: 300px;
+    height: 380px;
+    background-color: rgb(90, 90, 90);
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px; 
+    color: rgb(202, 201, 201);
+    text-align: center;
+}
+
+.button1 {
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: #ca8504;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.button1:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+label {
+    font-size: 16px;
+    color: rgb(202, 201, 201);
+    margin-bottom: 5px;
+    display: block; 
+    transition: color 0.2s; 
+}
+
+label:hover {
+    color: #acaaaa; 
+}
+
+input[type="number"], select {
+    text-align: center;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #ca8504;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="number"]:hover, select:hover {
+    color: #141414; 
+}
+
+input::placeholder {
+    color: white; 
+    opacity: 1; 
+    text-align: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
